@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aries Sta Maria - Virtual Assistant Portfolio</title>
   <style>
+    /* Body and Layout */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       max-width: 800px;
       margin: 40px auto;
       padding: 0 20px 40px;
-      background-color: #f9f9f9;
+      background: linear-gradient(135deg, #e0f0ff, #f9f9f9);
       color: #333;
       line-height: 1.6;
+      transition: background 0.5s ease;
     }
+    /* Header */
     header {
       text-align: center;
       margin-bottom: 35px;
@@ -28,7 +31,7 @@
       margin-bottom: 15px;
       border: 4px solid #007bff;
       box-shadow: 0 4px 8px rgba(0,123,255,0.3);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     img:hover {
       transform: scale(1.05);
@@ -46,6 +49,7 @@
       color: #555;
       margin-top: 0;
     }
+    /* Sections */
     section {
       margin-bottom: 35px;
       background-color: #fff;
@@ -80,6 +84,34 @@
     a:hover {
       text-decoration: underline;
     }
+    /* Contact Section */
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+    /* Schedule Button */
+    .schedule-btn {
+      display: block;
+      width: 220px;
+      margin: 25px auto 0;
+      padding: 12px 20px;
+      background-color: #007bff;
+      color: white;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-align: center;
+      border-radius: 30px;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0,123,255,0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+    }
+    .schedule-btn:hover {
+      background-color: #0056b3;
+      box-shadow: 0 6px 20px rgba(0,86,179,0.6);
+    }
+    /* Footer */
     footer {
       text-align: center;
       font-size: 0.9em;
@@ -151,9 +183,12 @@
 
   <section>
     <h2>Contact Me</h2>
-    <p>📘 Facebook: <a href="https://facebook.com/ariesstamaria" target="_blank" rel="noopener noreferrer">Aries Sta Maria</a></p>
-    <p>📧 Email: <a href="mailto:stamaria.aries1997@gmail.com">stamaria.aries1997@gmail.com</a></p>
-    <p>📱 Mobile: 0955 052 9020</p>
+    <div class="contact-info">
+      <p>📘 Facebook: <a href="https://facebook.com/ariesstamaria" target="_blank" rel="noopener noreferrer">Aries Sta Maria</a></p>
+      <p>📧 Email: <a href="mailto:stamaria.aries1997@gmail.com">stamaria.aries1997@gmail.com</a></p>
+      <p>📱 Mobile: 0955 052 9020</p>
+    </div>
+    <a href="https://calendly.com/ariessta" target="_blank" rel="noopener noreferrer" class="schedule-btn">Schedule a Meeting</a>
   </section>
 
   <footer>
