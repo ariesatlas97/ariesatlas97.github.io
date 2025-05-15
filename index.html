@@ -1,110 +1,176 @@
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aries Sta Maria | Virtual Assistant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --main-color: #007bff;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+    header {
+      background-color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid var(--main-color);
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: scale(1.05);
+    }
+    header h1 {
+      margin: 15px 0 5px;
+      color: var(--main-color);
+      font-size: 2.4rem;
+    }
+    header .role {
+      font-style: italic;
+      font-weight: 600;
+      color: #555;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-left: 5px solid var(--main-color);
+    }
+    section h2 {
+      margin-top: 0;
+      color: var(--main-color);
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    section ul {
+      padding-left: 20px;
+    }
+    section ul li {
+      margin-bottom: 8px;
+    }
+    .contact a {
+      color: var(--main-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    .schedule-btn {
+      display: inline-block;
+      background-color: var(--main-color);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .schedule-btn:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.9em;
+      color: #777;
+      background: #fff;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg.jpg" alt="Aries Sta Maria">
+    <h1>Aries Sta Maria</h1>
+    <p class="role">Virtual Assistant | Entrepreneur | Tech Support Specialist</p>
+  </header>
 
-export default function Portfolio() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white text-gray-800 p-4 md:p-10">
-      <div className="max-w-5xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <img
-            src="/profile.jpg.jpg"
-            alt="Aries Sta Maria"
-            className="mx-auto w-36 h-36 rounded-full border-4 border-blue-500 shadow-md hover:scale-105 transition-transform"
-          />
-          <h1 className="text-4xl font-bold text-blue-600 mt-4">Aries Sta Maria</h1>
-          <p className="italic text-lg text-gray-600">Virtual Assistant | Entrepreneur | Tech Support Specialist</p>
-        </div>
+  <main>
+    <section>
+      <h2>Summary</h2>
+      <p>Hi, I’m Aries Sta. Maria, a dedicated and results-driven Virtual Assistant with a strong background in online business, sales, customer support, and technical assistance. Since 2016, I’ve managed my own online business, specializing in buying and selling gadgets, motorbikes, and cars—developing real-world skills in sales, negotiation, customer service, and business management.</p>
+      <p>With 2 years of experience in technical support and upselling, I’ve mastered effective communication, multitasking, and customer satisfaction strategies. I'm now leveraging my entrepreneurial and tech skills to help clients as a reliable, fast-learning, and detail-oriented Virtual Assistant.</p>
+    </section>
 
-        {/* Summary */}
-        <Card className="mb-6">
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-bold text-blue-500 mb-4 border-b pb-2">Summary</h2>
-            <p className="mb-4">
-              Hi, I’m Aries Sta. Maria, a dedicated and results-driven Virtual Assistant with a strong background in online business, sales,
-              customer support, and technical assistance. Since 2016, I’ve managed my own online business, specializing in buying and selling
-              gadgets, motorbikes, and cars—developing real-world skills in sales, negotiation, customer service, and business management.
-            </p>
-            <p>
-              With 2 years of experience in technical support and upselling, I’ve mastered effective communication, multitasking, and customer
-              satisfaction strategies. I'm now leveraging my entrepreneurial and tech skills to help clients as a reliable, fast-learning, and
-              detail-oriented Virtual Assistant.
-            </p>
-          </CardContent>
-        </Card>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Virtual Assistance</li>
+        <li>Customer Service & Technical Support</li>
+        <li>Online Selling & Product Research</li>
+        <li>Sales & Negotiation</li>
+        <li>Social Media Management</li>
+        <li>Email & Chat Management</li>
+        <li>Calendar Scheduling</li>
+        <li>Data Entry & Admin Tasks</li>
+        <li>Google Workspace / Microsoft Office</li>
+        <li>Revenue Growth Strategy & Execution</li>
+        <li>Leading Sales Teams</li>
+        <li>Supplier & Vendor Management</li>
+        <li>Competitive Analysis & Market Trends</li>
+        <li>Market Expansion & Penetration</li>
+        <li>Client Retention & Key Accounts</li>
+        <li>Digital Marketing & E-commerce</li>
+        <li>Fast Learner & Detail-Oriented</li>
+      </ul>
+    </section>
 
-        {/* Skills */}
-        <Card className="mb-6">
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-bold text-blue-500 mb-4 border-b pb-2">Skills</h2>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Virtual Assistance</li>
-              <li>Customer Service & Technical Support</li>
-              <li>Online Selling & Product Research</li>
-              <li>Sales & Negotiation</li>
-              <li>Social Media Management</li>
-              <li>Email & Chat Management</li>
-              <li>Calendar Scheduling</li>
-              <li>Data Entry & Admin Tasks</li>
-              <li>Google Workspace / Microsoft Office</li>
-              <li>Revenue Growth Strategy & Execution</li>
-              <li>Leading Sales Teams</li>
-              <li>Supplier & Vendor Management</li>
-              <li>Competitive Analysis & Market Trends</li>
-              <li>Market Expansion & Penetration</li>
-              <li>Client Retention & Key Accounts</li>
-              <li>Digital Marketing & E-commerce</li>
-              <li>Fast Learner & Detail-Oriented</li>
-            </ul>
-          </CardContent>
-        </Card>
+    <section>
+      <h2>Work Experience</h2>
+      <h3>Self-Employed – Online Business Owner (2016 – Present)</h3>
+      <ul>
+        <li>Managed and scaled a successful e-commerce business through social media and online marketplaces</li>
+        <li>Specialized in high-ticket sales and negotiation with both buyers and suppliers</li>
+        <li>Generated consistent revenue by identifying trending and in-demand products</li>
+        <li>Handled customer inquiries, product sourcing, and logistics</li>
+        <li>Maintained inventory and financial records</li>
+        <li>Built long-term supplier partnerships and offered competitive pricing</li>
+      </ul>
+      <h3>Technical Support Representative – With Upselling Skills (2 Years)</h3>
+      <ul>
+        <li>Provided tech support via phone, chat, and email</li>
+        <li>Assisted with product setup and troubleshooting</li>
+        <li>Applied upselling techniques to promote services</li>
+        <li>Maintained high customer satisfaction through effective communication</li>
+      </ul>
+    </section>
 
-        {/* Work Experience */}
-        <Card className="mb-6">
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-bold text-blue-500 mb-4 border-b pb-2">Work Experience</h2>
-            <div className="mb-4">
-              <h3 className="font-semibold text-lg">Self-Employed – Online Business Owner (2016 – Present)</h3>
-              <ul className="list-disc list-inside ml-4 space-y-1">
-                <li>Managed and scaled a successful e-commerce business through social media and online marketplaces</li>
-                <li>Specialized in high-ticket sales and negotiation with both buyers and suppliers</li>
-                <li>Generated consistent revenue by identifying trending and in-demand products</li>
-                <li>Handled customer inquiries, product sourcing, and logistics</li>
-                <li>Maintained inventory and financial records</li>
-                <li>Built long-term supplier partnerships and offered competitive pricing</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg">Technical Support Representative – With Upselling Skills (2 Years)</h3>
-              <ul className="list-disc list-inside ml-4 space-y-1">
-                <li>Provided tech support via phone, chat, and email</li>
-                <li>Assisted with product setup and troubleshooting</li>
-                <li>Applied upselling techniques to promote services</li>
-                <li>Maintained high customer satisfaction through effective communication</li>
-              </ul>
-            </div>
-          </CardContent>
-        </Card>
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>📘 Facebook: <a href="https://www.facebook.com/share/19BQcEDPca/" target="_blank">Aries Sta Maria</a></p>
+      <p>📧 Email: <a href="mailto:stamaria.aries1997@gmail.com">stamaria.aries1997@gmail.com</a></p>
+      <p>📱 Mobile: 0955 052 9020</p>
+      <a class="schedule-btn" href="https://calendly.com/stamaria-aries1997/30min" target="_blank">Schedule a Meeting</a>
+    </section>
+  </main>
 
-        {/* Contact Section */}
-        <Card className="mb-12">
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-bold text-blue-500 mb-4 border-b pb-2">Contact Me</h2>
-            <p className="mb-2">📘 Facebook: <a href="https://www.facebook.com/share/19BQcEDPca/" className="text-blue-600 underline" target="_blank">Aries Sta Maria</a></p>
-            <p className="mb-2">📧 Email: <a href="mailto:stamaria.aries1997@gmail.com" className="text-blue-600 underline">stamaria.aries1997@gmail.com</a></p>
-            <p className="mb-4">📱 Mobile: 0955 052 9020</p>
-            <a href="https://calendly.com/stamaria-aries1997/30min" target="_blank">
-              <Button className="mt-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full shadow-md">Schedule a Meeting</Button>
-            </a>
-          </CardContent>
-        </Card>
-
-        {/* Footer */}
-        <footer className="text-center text-sm text-gray-500 italic">
-          © 2025 Aries Sta Maria | Virtual Assistant Portfolio
-        </footer>
-      </div>
-    </div>
-  );
-}
+  <footer>
+    <p>© 2025 Aries Sta Maria | Virtual Assistant Portfolio</p>
+  </footer>
+</body>
+</html>
