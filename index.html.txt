@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aries Atlas - Virtual Assistant Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      margin-bottom: 5px;
+    }
+    .skills, .contact {
+      margin-bottom: 30px;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aries Atlas</h1>
+    <p>Virtual Assistant</p>
+  </header>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Email Management</li>
+      <li>Data Entry</li>
+      <li>Social Media Handling</li>
+      <li>Customer Support</li>
+      <li>Basic Graphic Design</li>
+      <li>Research</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Aries Atlas</p>
+  </footer>
+</body>
+</html>
