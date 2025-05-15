@@ -6,16 +6,19 @@
   <title>Aries Sta Maria - Virtual Assistant Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       max-width: 800px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 0 20px 40px;
       background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #007bff;
     }
     img {
       width: 160px;
@@ -23,26 +26,56 @@
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 15px;
-      border: 3px solid #007bff;
+      border: 4px solid #007bff;
+      box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,123,255,0.5);
     }
     h1 {
       margin-bottom: 5px;
+      color: #007bff;
+      font-weight: 700;
+      font-size: 2.4rem;
+    }
+    p.role {
+      font-style: italic;
+      font-weight: 600;
+      color: #555;
+      margin-top: 0;
     }
     section {
-      margin-bottom: 30px;
+      margin-bottom: 35px;
+      background-color: #fff;
+      padding: 20px 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border: 1px solid #ddd;
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
     h2 {
       color: #007bff;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-weight: 700;
     }
     ul {
       list-style-type: square;
       padding-left: 20px;
     }
+    ul li {
+      margin-bottom: 8px;
+    }
     a {
       color: #007bff;
       text-decoration: none;
+      font-weight: 600;
     }
     a:hover {
       text-decoration: underline;
@@ -52,6 +85,9 @@
       font-size: 0.9em;
       color: #777;
       margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-style: italic;
     }
   </style>
 </head>
@@ -60,7 +96,7 @@
   <header>
     <img src="profile.jpg.jpg" alt="Aries Sta Maria">
     <h1>Aries Sta Maria</h1>
-    <p>Virtual Assistant | Entrepreneur | Tech Support Specialist</p>
+    <p class="role">Virtual Assistant | Entrepreneur | Tech Support Specialist</p>
   </header>
 
   <section>
@@ -115,7 +151,7 @@
 
   <section>
     <h2>Contact Me</h2>
-    <p>📘 Facebook: <a href="https://facebook.com/ariesstamaria" target="_blank">Aries Sta Maria</a></p>
+    <p>📘 Facebook: <a href="https://facebook.com/ariesstamaria" target="_blank" rel="noopener noreferrer">Aries Sta Maria</a></p>
     <p>📧 Email: <a href="mailto:stamaria.aries1997@gmail.com">stamaria.aries1997@gmail.com</a></p>
     <p>📱 Mobile: 0955 052 9020</p>
   </section>
