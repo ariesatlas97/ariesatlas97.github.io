@@ -95,21 +95,32 @@
     .contact a:hover {
       text-decoration: underline;
     }
+    
+    /* Updated Schedule Button Style - Glass Blur + Rounded + Emoji */
     .schedule-btn {
       display: inline-block;
-      background-color: var(--main-color);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-weight: bold;
+      background: rgba(0, 123, 255, 0.15);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 2px solid var(--main-color);
+      color: var(--main-color);
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-weight: 700;
       font-size: 1.1rem;
       margin-top: 20px;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+      transition: all 0.3s ease;
+      user-select: none;
     }
     .schedule-btn:hover {
-      background-color: #0056b3;
+      background: rgba(0, 123, 255, 0.4);
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0, 123, 255, 0.5);
     }
+    
     footer {
       text-align: center;
       padding: 25px 10px;
@@ -237,7 +248,7 @@
       <p>📧 Email: <a href="mailto:stamaria.aries1997@gmail.com">stamaria.aries1997@gmail.com</a></p>
       <p>📱 Mobile: 0955 052 9020</p>
       <p>🏠 Address: 124 K-7th St. Brgy. East Kamias, Quezon City 1102</p>
-      <a class="schedule-btn" href="https://calendly.com/stamaria-aries1997/30min" target="_blank">Schedule a Meeting</a>
+      <a class="schedule-btn" href="https://calendly.com/stamaria-aries1997/30min" target="_blank">📅 Schedule a Meeting</a>
     </section>
   </main>
 
