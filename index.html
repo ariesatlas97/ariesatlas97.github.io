@@ -8,73 +8,21 @@
   <style>
     :root {
       --main-color: #007bff;
-      --text-color: #fff;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
     }
-
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: black;
+      background-color: var(--bg-color);
       color: var(--text-color);
-      position: relative;
-      overflow-x: hidden;
     }
-
-    /* CSS Galaxy Starfield Animation */
-    .stars, .stars2, .stars3 {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-      background: transparent;
-    }
-
-    .stars::after,
-    .stars2::after,
-    .stars3::after {
-      content: "";
-      position: absolute;
-      width: 200%;
-      height: 200%;
-      background-repeat: repeat;
-      background-position: 0 0;
-      animation: moveStars 100s linear infinite;
-    }
-
-    .stars::after {
-      background-image: radial-gradient(white 1px, transparent 1px);
-      background-size: 2px 2px;
-      opacity: 0.3;
-    }
-
-    .stars2::after {
-      background-image: radial-gradient(white 1px, transparent 1px);
-      background-size: 3px 3px;
-      opacity: 0.2;
-      animation-duration: 150s;
-    }
-
-    .stars3::after {
-      background-image: radial-gradient(white 1px, transparent 1px);
-      background-size: 4px 4px;
-      opacity: 0.1;
-      animation-duration: 200s;
-    }
-
-    @keyframes moveStars {
-      from { transform: translate(0, 0); }
-      to { transform: translate(-500px, 1000px); }
-    }
-
     header {
-      background-color: rgba(0,0,0,0.6);
+      background-color: white;
       padding: 60px 20px 40px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-
     header img {
       width: 160px;
       height: 160px;
@@ -84,38 +32,32 @@
       box-shadow: 0 4px 8px rgba(0,123,255,0.3);
       transition: transform 0.3s ease;
     }
-
     header img:hover {
       transform: scale(1.05);
     }
-
     header h1 {
       margin: 15px 0 5px;
       color: var(--main-color);
       font-size: 2.4rem;
     }
-
     header .role {
       font-style: italic;
       font-weight: 600;
-      color: #ccc;
+      color: #555;
     }
-
     main {
       max-width: 900px;
       margin: 0 auto;
       padding: 30px 20px;
     }
-
     section {
-      background: rgba(0, 0, 0, 0.6);
+      background: white;
       padding: 25px;
       margin-bottom: 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
       border-left: 5px solid var(--main-color);
     }
-
     section h2 {
       margin-top: 0;
       color: var(--main-color);
@@ -123,27 +65,24 @@
       margin-bottom: 15px;
     }
 
+    /* Collapsible skills style */
     details {
       margin-bottom: 15px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid #444;
+      background: #fff;
+      border: 1px solid #ddd;
       border-radius: 10px;
       padding: 10px 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-
     summary {
       font-weight: bold;
       font-size: 1.1rem;
       cursor: pointer;
-      color: #fff;
     }
-
     ul {
       padding-left: 20px;
       margin-top: 10px;
     }
-
     li {
       margin-bottom: 5px;
     }
@@ -153,11 +92,9 @@
       text-decoration: none;
       font-weight: 600;
     }
-
     .contact a:hover {
       text-decoration: underline;
     }
-
     .schedule-btn {
       display: inline-block;
       background-color: var(--main-color);
@@ -170,34 +107,139 @@
       text-decoration: none;
       transition: background-color 0.3s ease;
     }
-
     .schedule-btn:hover {
       background-color: #0056b3;
     }
-
     footer {
       text-align: center;
       padding: 25px 10px;
       font-size: 0.9em;
-      color: #ccc;
-      background: rgba(0,0,0,0.6);
-      border-top: 1px solid #444;
+      color: #777;
+      background: #fff;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 <body>
-  <div class="stars"></div>
-  <div class="stars2"></div>
-  <div class="stars3"></div>
-
   <header>
     <img src="profile.jpg.jpg" alt="Aries Sta Maria">
     <h1>Aries Sta Maria</h1>
     <p class="role">Virtual Assistant | Entrepreneur | Tech Support Specialist</p>
   </header>
 
-  <!-- Main content here (summary, work experience, skills, contact, etc.) -->
-  <!-- I shortened this part for readability. Paste your full version here. -->
+  <main>
+    <section>
+      <h2>Summary</h2>
+      <p>💡 Hi there! I’m Aries — Your Reliable Virtual Assistant & Entrepreneur<br>
+      I help busy professionals and businesses grow by providing efficient, creative, and trustworthy virtual assistance. With 9+ years of hands-on entrepreneurial experience, I’ve mastered key skills in operations, customer service, marketing, and time management — all while running my own business from the ground up.</p>
+
+      <p>I’m highly tech-savvy and a fast learner — easily adapting to tools like Google Workspace, Canva, Trello, and basic CRMs. But more than that, I bring something that truly sets me apart:</p>
+
+      <p>🚀 I don’t just do tasks. I innovate.<br>
+      To innovate means more than just improving what already exists — it’s about thinking beyond the usual, creating systems or solutions that haven't been discovered yet, and being the first to bring bold ideas to life.<br>
+      Whether it’s streamlining a chaotic process, automating a repetitive task, or designing smarter systems to save you time — I think like a strategist, not just a task-doer.</p>
+
+      <p>I believe in executing plans that others haven’t imagined yet — offering original, result-driven ideas tailored to your goals. My innovative mindset isn’t just about being different — it’s about being truly effective.</p>
+
+      <p>Here’s what I bring to your business:<br>
+      ✅ Seamless email, calendar & file management<br>
+      ✅ Accurate data entry, research & admin support<br>
+      ✅ Professional communication & client handling<br>
+      ✅ Creative problem-solving backed by entrepreneurial experience<br>
+      ✅ Strategic process improvement — powered by original thinking<br>
+      ✅ Flexibility to handle a wide range of admin and support tasks based on your specific business needs</p>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <h3>Self-Employed – Online Buying and Selling</h3>
+      <p><strong>Jan 2016 – Present</strong></p>
+      <ul>
+        <li>Managed e-commerce business focused on gadgets, motorbikes, and cars.</li>
+        <li>Expertise in sales execution, negotiation, and business scaling.</li>
+        <li>Built strong supplier relationships and maintained profitable pricing strategies.</li>
+      </ul>
+      <h3>Tech Specialist – Intouch CX</h3>
+      <p><strong>Oct 2022 – Aug 2024 (Remote)</strong></p>
+      <ul>
+        <li>Provided tech support via phone, chat, and email.</li>
+        <li>Used tools like TeamViewer, Zendesk, ServiceNow, Freshdesk.</li>
+        <li>Handled hardware/software/network issues and remote assistance.</li>
+      </ul>
+      <h3>Sales Agent 2 – St. Peter Life Plan Insurance</h3>
+      <p><strong>Oct 2021 – Oct 2022</strong></p>
+      <ul>
+        <li>Sold pre-need life plans via fieldwork and online marketing.</li>
+        <li>Achieved sales targets, maintained customer relationships.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💼 My Professional Skillset</h2>
+
+      <details open>
+        <summary>📌 Virtual Assistant (VA) Skills</summary>
+        <ul>
+          <li><strong>Core Tasks:</strong> Email & Calendar Management, Data Entry, Online Research</li>
+          <li><strong>File Tools:</strong> Google Drive, Dropbox</li>
+          <li><strong>Communication:</strong> Chat, Email, Customer Service</li>
+          <li><strong>Soft Skills:</strong> Time Management, English Writing, Problem-Solving</li>
+          <li><strong>Tools:</strong> Trello, ClickUp, Canva, Zoom, Slack</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🚀 Innovation Skills</summary>
+        <ul>
+          <li><strong>Creative Thinking:</strong> Problem Identification, Generating New Ideas, Design Thinking</li>
+          <li><strong>Strategic Innovation:</strong> Trend Forecasting, Business Model Innovation</li>
+          <li><strong>Digital Innovation:</strong> AI Tools (ChatGPT, Zapier, Notion AI), Process Automation</li>
+          <li><strong>Mindset:</strong> Risk-taking, Curiosity, Growth Mindset, Critical Thinking</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>💻 Tech Specialist Skills</summary>
+        <ul>
+          <li><strong>Computer:</strong> Troubleshooting, Installation, Network Setup, Data Backup</li>
+          <li><strong>Operating Systems:</strong> Windows, macOS, Linux</li>
+          <li><strong>Programming:</strong> HTML, CSS, JavaScript, Flutter Basics</li>
+          <li><strong>Tools:</strong> Google Cloud, TeamViewer, AnyDesk, Cybersecurity Basics</li>
+          <li><strong>Soft Skills:</strong> Analytical Thinking, Tech Documentation, Training</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>📈 Business & Entrepreneurial Skills</summary>
+        <ul>
+          <li><strong>Mindset:</strong> Resilience, Leadership, Vision Planning</li>
+          <li><strong>Business Strategy:</strong> Sales, Marketing, Financial Literacy, Customer Relationship</li>
+          <li><strong>Digital:</strong> Social Media Marketing, Shopify, QuickBooks, E-Commerce</li>
+          <li><strong>Execution:</strong> Negotiation, Branding, Storytelling, Product Sourcing</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🧠 Business Management Skills</summary>
+        <ul>
+          <li><strong>Core:</strong> Market Analysis, Planning, Budgeting, Legal Basics</li>
+          <li><strong>Sales & Branding:</strong> Pitching, Client Trust, Content Marketing</li>
+          <li><strong>Leadership:</strong> Delegation, Team Hiring, Crisis Management</li>
+          <li><strong>Growth:</strong> ROI Tracking, Customer Retention, Business Systemization</li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>📘 Facebook: <a href="https://www.facebook.com/share/1DiASYT7EU/" target="_blank">Aries Sta Maria</a></p>
+      <p>🌐 Website: <a href="https://ariesatlas97.github.io/" target="_blank">ariesatlas97.github.io</a></p>
+      <p>📧 Email: <a href="mailto:stamaria.aries1997@gmail.com">stamaria.aries1997@gmail.com</a></p>
+      <p>📱 Mobile: 0955 052 9020</p>
+      <p>🏠 Address: 124 K-7th St. Brgy. East Kamias, Quezon City 1102</p>
+      <a class="schedule-btn" href="https://calendly.com/stamaria-aries1997/30min" target="_blank">Schedule a Meeting</a>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Aries Sta Maria | Virtual Assistant Portfolio</p>
